@@ -1,0 +1,1 @@
+<?php require __DIR__ . "/vendor/autoload.php"; app()->get("/", function () { response()->json(["message" => "Hello World from Leaf!"]); }); app()->get("/date", function () { response()->json(["message" => "Hello World from Leaf! date: " . date("Y-m-d H:i:s")]); }); app()->run();
